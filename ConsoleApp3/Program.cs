@@ -11,7 +11,7 @@ namespace ConsoleApp3
 			{
 				using (var httpClient = new HttpClient())
 				{
-					var request = new HttpRequestMessage(HttpMethod.Head, new Uri("http://test.com:5000"));
+					var request = new HttpRequestMessage(HttpMethod.Head, new Uri("http://127.0.0.1:5000"));
 					var response = httpClient.SendAsync(request).Result;
 				}
 			}

@@ -10,7 +10,7 @@ namespace WebApplication1
 			var host = new WebHostBuilder()
 				.UseWebListener()
 				.UseContentRoot(Directory.GetCurrentDirectory())
-				.UseUrls("http://test.com:5000")
+				.UseUrls("http://127.0.0.1:5000")
 				.UseStartup<Startup>()
 				.Build();
 
